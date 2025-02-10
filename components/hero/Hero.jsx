@@ -1,8 +1,9 @@
 "use client";
-import React, { useState } from "react"; 
+import React, { useState } from "react";
 import Header from "../header/Header";
 import Navbar from "../header/Navbar";
 import BottomSection from "./BottomSection";
+import CardSection from "../header/CardSection";
 
 export default function Hero() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -26,7 +27,11 @@ export default function Hero() {
 
       {/* Overlay Image */}
       <div className="absolute inset-0 flex justify-center items-center">
-        <img src="/assets/Group 3121.png" alt="Overlay" className="h-full w-full" />
+        <img
+          src="/assets/Group 3121.png"
+          alt="Overlay"
+          className="h-full w-full"
+        />
       </div>
 
       {/* Header & Navbar */}
@@ -36,16 +41,19 @@ export default function Hero() {
       <div className="hidden md:block relative mt-4">
         <Navbar />
       </div>
+      
+      <div className="absolute inset-0 flex justify-center items-center">
+        <CardSection />
+      </div>
 
       {/* Bottom Section */}
       <div className="z-10 w-full">
-        <BottomSection 
-          currentImageIndex={currentImageIndex} 
-          setCurrentImageIndex={setCurrentImageIndex} 
-          images={images} 
+        <BottomSection
+          currentImageIndex={currentImageIndex}
+          setCurrentImageIndex={setCurrentImageIndex}
+          images={images}
         />
       </div>
     </div>
   );
 }
-

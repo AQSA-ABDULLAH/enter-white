@@ -61,7 +61,9 @@ const Card = ({ index }) => {
         </div>
 
         {/* Countdown Timer */}
-        <Timer />
+        <div className="absolute w-[100%] top-3 px-6">
+          <Timer />
+        </div>
 
         {/* Share And Like */}
         <div className="absolute top-24 3xl:top-28 right-7 flex items-center space-x-4">
@@ -128,11 +130,7 @@ const Card = ({ index }) => {
 
           <div className="w-16 flex justify-end">
             {index % 2 === 0 ? (
-              <img
-                src="/assets/Group 3245.png"
-                alt="logo"
-                className="w-7"
-              />
+              <img src="/assets/Group 3245.png" alt="logo" className="w-7" />
             ) : (
               <img
                 src="/assets/g12.png"
@@ -153,9 +151,7 @@ const Card = ({ index }) => {
           <p>£25.00 GBP</p>
           <button className="pr-4">BUY ENTRY NOW</button>
         </div>
-        <p className="text-end text-[5px] 3xl:text-[7px] px-5">
-          #ZM7861234567
-        </p>
+        <p className="text-end text-[5px] 3xl:text-[7px] px-5">#ZM7861234567</p>
       </div>
     </div>
   );
