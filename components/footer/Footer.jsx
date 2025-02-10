@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
-    <footer className="bg-white text-black uppercase  px-8 desktop:px-20 tracking-wider">
-      <div className="text-[14px] desktop:text-[18px] mx-auto pb-8 flex flex-col gap-16 md:flex-row flex-wrap justify-between">
+    <footer className="bg-white text-black uppercase  px-8 3xl:px-20 tracking-wider">
+      <div className="text-[14px] 3xl:text-[18px] mx-auto pb-8 flex flex-col gap-16 md:flex-row flex-wrap justify-between">
         {/* Zimopro Section */}
         <div>
           <h3 className="mb-10 font-semibold">ZIMOPRO.COM</h3>
@@ -90,12 +90,12 @@ export default function Footer() {
       </div>
 
       {/* Footer Bottom */}
-      <div className="flex flex-col sm:flex-row gap-10 justify-between py-4 text-[12px] desktop:text-[13px] text-black">
+      <div className="flex flex-col sm:flex-row gap-10 justify-between py-4 text-[12px] 3xl:text-[13px] text-black">
         <div className="flex-1 flex flex-col md:flex-row items-center gap-2">
           <img
             src="/assets/Group 2877.png"
             alt="logo"
-            className="max-md:w-14 h-4 desktop:h-4"
+            className="max-md:w-14 h-4 3xl:h-4"
           />
           <span>COPYRIGHT &copy; 2022 Zimo Group. All Rights Reserved.</span>
         </div>
@@ -107,7 +107,7 @@ export default function Footer() {
         <div className="flex-1 flex justify-end">
           <img
             src="/assets/Group 2666.png"
-            className="w-[18rem] max-desktop:h-[1.6rem] desktop:w-[28rem]"
+            className="w-[18rem] max-3xl:h-[1.6rem] 3xl:w-[28rem]"
           />
         </div>
       </div>

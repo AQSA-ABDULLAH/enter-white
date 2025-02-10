@@ -29,7 +29,7 @@ const SliderSection = ({ title }) => {
 
   return (
     <div>
-      <div className="flex gap-5 justify-between items-center py-10 px-8 desktop:px-20">
+      <div className="flex gap-5 justify-between items-center py-10 px-8 3xl:px-20">
         <h1 className="text-[12px] md:text-[24px] 2xl:text-[30px] font-semibold uppercase">
           {title}
         </h1>
@@ -54,7 +54,7 @@ const SliderSection = ({ title }) => {
       <div className="mx-auto mt-6">
         <Slider ref={sliderRef} {...settings}>
           {Array(8).fill(0).map((_, index) => (
-            <div className="px-8 desktop:px-20" key={index}>
+            <div className="px-8 3xl:px-20" key={index}>
               <Card index={index + 1} />
             </div>
           ))}
