@@ -1,6 +1,7 @@
 "use client";
 import React, { useRef } from "react";
 import dynamic from "next/dynamic";
+import { motion } from "framer-motion";
 import Card from "./card/Card";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -19,6 +20,11 @@ const settings = {
     { breakpoint: 1024, settings: { slidesToShow: 2, slidesToScroll: 1 } },
     { breakpoint: 600, settings: { slidesToShow: 1, slidesToScroll: 1 } },
   ],
+};
+
+const fadeUpVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
 };
 
 const SliderSection = ({ title }) => {
@@ -53,11 +59,20 @@ const SliderSection = ({ title }) => {
       </div>
       <div className="mx-auto mt-6">
         <Slider ref={sliderRef} {...settings}>
-          {Array(8).fill(0).map((_, index) => (
-            <div className="px-8 3xl:px-20" key={index}>
-              <Card index={index + 1} />
-            </div>
-          ))}
+          {Array(8)
+            .fill(0)
+            .map((_, index) => (
+              <motion.div
+                key={index}
+                className="px-8 3xl:px-20"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.2 }}
+                variants={fadeUpVariants}
+              >
+                <Card index={index + 1} />
+              </motion.div>
+            ))}
         </Slider>
       </div>
       <img
@@ -81,4 +96,5 @@ function Main() {
 }
 
 export default Main;
+
 
