@@ -1,14 +1,14 @@
 import React from "react";
 
 const Card = ({ title, subtitle, description, buttonText }) => (
-  <div>
+  <div className="hidden md:block">
     <div className="relative w-[180px] 2xl:w-[212px] flex flex-col items-center bg-cover bg-center text-white tracking-widest">
-      <div className="bg-black bg-opacity-40 w-full h-[180px] 2xl:h-[212px] p-4 border border-white rounded-lg text-center flex flex-col justify-between">
-        <h2 className="text-[16px] 3xl:text-[20px]">{title}</h2>
-        <p className="text-[16px] 3xl:text-[20px]">{subtitle}</p>
-        <p className="text-[8px] 3xl:text-[12px]">{description}</p>
+      <div className="bg-black bg-opacity-40 w-full h-[160px] 2xl:h-[212px] p-4 border border-white rounded-lg text-center flex flex-col justify-between">
+        <h2 className="text-[15px] 3xl:text-[20px]">{title}</h2>
+        <p className="text-[15px] 3xl:text-[20px]">{subtitle}</p>
+        <p className="text-[7px] 3xl:text-[12px]">{description}</p>
       </div>
-      <div className="bg-black bg-opacity-40 h-[40px] 2xl:h-[45px] mt-4 flex justify-center text-white rounded-lg border border-white text-center w-full">
+      <div className="bg-black bg-opacity-40 h-[38px] 2xl:h-[45px] mt-4 flex justify-center text-white rounded-lg border border-white text-center w-full">
         <button className=" hover:bg-white hover:text-black transition text-[14px] 3xl:text-[20px] tracking-widest">
           {buttonText}
         </button>

@@ -12,6 +12,7 @@ function BottomSection({ currentImageIndex, setCurrentImageIndex, images }) {
         
         {/* Left Logo */}
         <div className="flex-shrink-0">
+          <img src="/assets/Group 3481.svg" alt="logo" className="max-md:h-4 max-3xl:h-12 mb-[12px]" />
           <img src="/assets/g12.png" alt="logo" className="max-md:h-4 md:max-3xl:mb-1 max-3xl:h-14" />
         </div>
 
