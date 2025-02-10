@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import Header from "../header/Header";
 import Navbar from "../header/Navbar";
 import BottomSection from "./BottomSection";
@@ -18,7 +19,7 @@ export default function Hero() {
   ];
 
   return (
-    <div className="relative h-[100vh] text-white">
+    <div className="relative h-[100vh] text-white overflow-hidden">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center transition-all duration-700 ease-in-out"
@@ -34,19 +35,37 @@ export default function Hero() {
         />
       </div>
 
-      {/* Header & Navbar */}
-      <div className="relative">
+      {/* Header with Slide-in Animation */}
+      <motion.div
+        className="relative"
+        initial={{ y: -50, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+      >
         <Header />
-      </div>
-      <div className="hidden md:block relative mt-4">
-        <Navbar />
-      </div>
-      
-      <div className="absolute inset-12 flex justify-center items-center ">
-        <CardSection />
-      </div>
+      </motion.div>
 
-      {/* Bottom Section */}
+      {/* Navbar with Delayed Slide-in Animation */}
+      <motion.div
+        className="hidden md:block relative mt-4"
+        initial={{ y: -30, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
+      >
+        <Navbar />
+      </motion.div>
+
+      {/* Card Section with Scale-in Effect */}
+      <motion.div
+        className="absolute inset-12 flex justify-center items-center"
+        initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
+      >
+        <CardSection />
+      </motion.div>
+
+      {/* Bottom Section (Handles Image Change) */}
       <div className="z-10 w-full">
         <BottomSection
           currentImageIndex={currentImageIndex}
@@ -57,3 +76,5 @@ export default function Hero() {
     </div>
   );
 }
+
+
