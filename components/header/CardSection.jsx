@@ -2,7 +2,7 @@ import React from "react";
 import { FaPlus, FaMinus } from "react-icons/fa6";
 
 const Card = ({ title, subtitle, description, buttonText, showControls }) => (
-  <div className="hidden md:flex text-white">
+  <div className="flex text-white">
     <div className="relative w-[180px] 2xl:w-[212px] flex flex-col items-center bg-cover bg-center tracking-widest">
       <div className="bg-black bg-opacity-40 w-full h-[160px] 2xl:h-[212px] p-4 border border-white rounded-lg text-center flex flex-col justify-between">
         <h2 className="text-[15px] 3xl:text-[20px]">{title}</h2>
@@ -28,7 +28,7 @@ const Card = ({ title, subtitle, description, buttonText, showControls }) => (
 
 function CardSection() {
   return (
-    <div className="flex justify-around w-[100%]">
+    <div className="flex flex-col sm:flex-row justify-around gap-12 sm:gap-0 sm:w-[100%]">
       <Card
         title="Postal Entry"
         subtitle="No Purchase Necessary"
