@@ -42,7 +42,7 @@ export default function Hero() {
         <Navbar />
       </div>
       
-      <div className="absolute inset-0 flex justify-center items-center">
+      <div className="absolute inset-12 flex justify-center items-center ">
         <CardSection />
       </div>
 
