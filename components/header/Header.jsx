@@ -29,7 +29,7 @@ export default function Header() {
           </div>
 
           {/* Third Div */}
-          <div className="flex flex-col md:flex-row items-center gap-6 justify-end flex-1">
+          <div className="flex flex-col md:flex-row items-end gap-6 justify-end flex-1">
             <div className="md:flex gap-6 2xl:gap-8 hidden ">
               <p className="text-[14px] md:text-[16px] 3xl:text-[20px] tracking-wider">JUST FOR YOU</p>
               <img src="/assets/Group 3035.png" alt="UK Flag" className="max-3xl:h-5"/>
