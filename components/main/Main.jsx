@@ -36,10 +36,10 @@ const SliderSection = ({ title }) => {
   return (
     <div>
       <div className="flex gap-5 justify-between items-center py-10 px-8 3xl:px-20">
-        <h1 className="text-[12px] md:text-[24px] 2xl:text-[30px] font-semibold uppercase">
+        <h1 className="text-[12px] md:text-[24px] 2xl:text-[30px] font-semibold uppercase leading-[12px]">
           {title}
         </h1>
-        <p className="uppercase text-[12px] md:text-[24px] font-semibold 2xl:text-[30px]">
+        <p className="hidden sm:block uppercase text-[12px] md:text-[24px] font-semibold 2xl:text-[30px]">
           View All Homes
         </p>
         <div className="flex gap-3">
@@ -96,5 +96,3 @@ function Main() {
 }
 
 export default Main;
-
-

@@ -140,7 +140,7 @@ const Card = ({ index }) => {
             )}
           </div>
         </div>
-        <div className="absolute bottom-4 3xl:bottom-4 max-2xl:right-24 2xl:right-28 3xl:right-32 w-[35.95px] opacity-60">
+        <div className="absolute bottom-3 sm:bottom-4 3xl:bottom-4 right-20 sm:right-24 2xl:right-28 3xl:right-32 w-[35.95px] opacity-60">
           <SquareProgressBar percentage={50} />
         </div>
       </div>
