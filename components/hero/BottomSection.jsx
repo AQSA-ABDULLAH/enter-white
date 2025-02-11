@@ -11,8 +11,8 @@ function BottomSection({ currentImageIndex, setCurrentImageIndex, images }) {
       <div className="absolute bottom-6 px-2 md:px-8 3xl:px-20 w-full flex flex-col md:flex-row items-center md:items-end justify-between">
         
         {/* Left Logo */}
-        <div className="flex-shrink-0 flex gap-4 sm:flex-col sm:gap-0">
-          <img src="/assets/Group 3481.svg" alt="logo" className="max-md:h-4 max-3xl:h-12 mb-[12px]" />
+        <div className="flex-shrink-0 flex gap-4 sm:flex-col sm:gap-0 items-start">
+          <img src="/assets/Group 3481.svg" alt="logo" className="max-md:h-4 max-3xl:h-12 3xl:h-24 mb-[12px]" />
           <img src="/assets/g12.png" alt="logo" className="max-md:h-5 md:max-3xl:mb-1 max-3xl:h-14" />
         </div>
 
