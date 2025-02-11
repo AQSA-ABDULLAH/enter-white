@@ -102,7 +102,7 @@ const Card = ({ index }) => {
 
         {/* Address and Details Section */}
         <div className="absolute w-[100%] bottom-11 3xl:bottom-11 tracking-wider">
-          <div className="flex flex-wrap gap-x-6 justify-center font-lato md:text-[10px] px-4 3xl:text-[13px] uppercase">
+          <div className="flex flex-wrap gap-x-6 justify-center font-lato text-[8px] md:text-[10px] 3xl:text-[13px] px-4 uppercase">
             <p>Shelton Street</p>
             <p>Covent Garden</p>
             <p>London</p>
@@ -116,14 +116,14 @@ const Card = ({ index }) => {
             <img
               src="/assets/Group 3005.png"
               alt="logo"
-              className="px-1 w-16 dektop:w-20"
+              className="px-1 w-12 sm:w-16 dektop:w-20"
             />
           </div>
           <div className="flex flex-col items-center">
-            <p className="text-end text-[12px] 3xl:text-[14px] tracking-widest">
+            <p className="text-end text-[8px] sm:text-[12px] 3xl:text-[14px] tracking-widest">
               £5,000,000 GBP
             </p>
-            <p className="text-end text-[10px] 3xl:text-[9px] tracking-widest">
+            <p className="text-end text-[6px] sm:text-[10px] 3xl:text-[9px] tracking-widest">
               #ZM7861234567
             </p>
           </div>
@@ -135,7 +135,7 @@ const Card = ({ index }) => {
               <img
                 src="/assets/g12.png"
                 alt="logo"
-                className="px-1 w-16 dektop:w-20"
+                className="px-1 w-14 sm:w-16 dektop:w-20"
               />
             )}
           </div>
