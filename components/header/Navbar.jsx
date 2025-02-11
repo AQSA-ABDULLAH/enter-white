@@ -20,7 +20,7 @@ function Navbar() {
       {/* Left Section */}
       <div className="flex-1 flex gap-3 justify-start">
         <IoArrowBackOutline className="cursor-pointer text-white w-5 h-6 2xl:w-6" />
-        <p className="uppercase tracking-[2px] text-[22px]">BACK TO LISTING</p>
+        <p className="uppercase tracking-[2px] text-[16px] 3xl:text-[22px]">BACK TO LISTING</p>
       </div>
 
       {/* Center Timer Component (Only Render on Client) */}

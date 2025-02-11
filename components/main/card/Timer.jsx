@@ -39,7 +39,7 @@ function Timer() {
 
   return (
     <div className="">
-      <div className="flex justify-between gap-6 items-center text-[30px] md:text-[38px] 3xl:text-[50px] tracking-widest"
+      <div className="flex justify-between gap-6 items-center text-[30px] md:text-[38px] 3xl:text-[64px] tracking-widest"
       style={{ fontWeight: 100 }}>
         <div className="flex flex-col items-center">
           <p>{timeLeft.days}</p>
